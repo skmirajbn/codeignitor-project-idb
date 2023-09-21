@@ -5,7 +5,7 @@ use CodeIgniter\Controller;
 
 class Blog extends Controller {
     public function getIndex() {
-        return view('myview');
+        echo view('myview');
     }
 }
 ?>
