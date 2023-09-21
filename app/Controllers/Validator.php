@@ -19,5 +19,8 @@ class Validator extends BaseController {
 
         // ...
     }
+    public function _remap($method) {
+        echo $method;
+    }
 }
 ?>
