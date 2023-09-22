@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <h1>User List</h1>
     <?= $users ?>
 </body>
 
