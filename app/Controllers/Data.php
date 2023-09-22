@@ -10,7 +10,9 @@ class Data extends Controller {
             'page_title' => 'My Website Title',
             'page_heading' => 'My Website Heading'
         ];
-        echo view('dataview', $data);
+        $parser->setData($data);
+        return $parser->render('myview');
+        // echo view('dataview', $data);
     }
 }
 ?>
