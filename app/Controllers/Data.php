@@ -9,8 +9,11 @@ class Data extends Controller {
         $table = new Table();
         $data = [
             ['Name', 'City', 'State'],
-            ['Fred', 'Hyderabad', 'Ts']
-        ]
+            ['Fred', 'Hyderabad', 'Ts'],
+            ['Fred', 'Hyderabad', 'Ts'],
+            ['Fred', 'Hyderabad', 'Ts'],
+            ['Fred', 'Hyderabad', 'Ts'],
+        ];
         $table->generate(($data));
     }
 }
