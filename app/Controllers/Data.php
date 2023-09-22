@@ -14,7 +14,8 @@ class Data extends Controller {
             ['Fred', 'Hyderabad', 'Ts'],
             ['Fred', 'Hyderabad', 'Ts'],
         ];
-        $records = $table->generate(($data));
+        $records['users'] = $table->generate(($data));
+        echo view('dataview', $records);
     }
 }
 ?>
