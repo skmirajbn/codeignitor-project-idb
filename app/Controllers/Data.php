@@ -8,7 +8,11 @@ class Data extends Controller {
         $parser = \Config\Services::parser();
         $data = [
             'page_title' => 'My Website Title',
-            'page_heading' => 'My Website Heading'
+            'page_heading' => 'My Website Heading',
+            'Subjects_lists' => [
+                ['Subject' => 'Bangla', 'marks' => '95'],
+                ['Subject' => 'English', 'marks' => '32'],
+            ]
         ];
         $parser->setData($data);
         return $parser->render('myview');
