@@ -2,20 +2,15 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use CodeIgniter\View\Table;
 
 class Data extends Controller {
     public function getIndex() {
-        $table = new Table();
+        $parser = \Config\Services::parser();
         $data = [
-            ['Name', 'City', 'State'],
-            ['Fred', 'Hyderabad', 'Ts'],
-            ['Fred', 'Hyderabad', 'Ts'],
-            ['Fred', 'Hyderabad', 'Ts'],
-            ['Fred', 'Hyderabad', 'Ts'],
+            'page_title' => 'My Website Title',
+            'page_heading' => 'My Website Heading'
         ];
-        $records['users'] = $table->generate(($data));
-        echo view('dataview', $records);
+        echo view('dataview', $data);
     }
 }
 ?>
