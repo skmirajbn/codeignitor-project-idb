@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
-{
-    public function index(): string
-    {
-        return view('welcome_message');
+use CodeIgniter\Controller;
+
+class Home extends Controller {
+    public function index(): string {
+        return view('index');
     }
 }
