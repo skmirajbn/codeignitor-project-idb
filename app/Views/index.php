@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="bg-gray-200 text-black py-3">
+    <div class="bg-gray-200 text-black py-5">
         <header class="container flex justify-between items-center">
             <div><img class="w-8" src="<?= base_url() ?>public/img/logo.svg" alt=""></div>
             <nav class="space-x-8 text-bold">
@@ -23,7 +23,11 @@
                 <input class="rounded-full px-4 py-1 text-black" type="text" placeholder="Search">
             </div>
         </header>
+
     </div>
+    <section class="bg-blue-600 flex justify-center items-center py-16">
+        <h2>This is Banner</h2>
+    </section>
 </body>
 
 </html>
