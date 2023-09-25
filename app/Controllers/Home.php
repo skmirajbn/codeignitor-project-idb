@@ -2,10 +2,18 @@
 
 namespace App\Controllers;
 
+use App\Models\CommonModel;
 use CodeIgniter\Controller;
 
 class Home extends Controller {
-    public function index(): string {
-        return view('index');
+    private $model;
+    function __construct() {
+        $this->model = new CommonModel();
+    }
+    public function index(): void {
+
+        $fetchRecord = $this->model->selectRecord('users');
+        echo "<pre>";
+        print_r($fetchRecord);
     }
 }
