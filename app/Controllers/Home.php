@@ -9,10 +9,7 @@ class Home extends Controller {
     function __construct() {
         $this->model = new CommonModel();
     }
-    public function index(): void {
-
-        $fetchRecord = $this->model->selectRecord('users');
-        echo "<pre>";
-        print_r($fetchRecord);
+    public function index() {
+        return view('index');
     }
 }
