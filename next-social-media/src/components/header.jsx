@@ -4,7 +4,7 @@ import profile from "./../../public/img/profile.jpg";
 
 export default function Header() {
   return (
-    <header class=" flex justify-between items-center bg-white text-black py-3 px-5 shadow-lg">
+    <header class=" flex justify-between items-center bg-white text-black py-3 px-5 shadow-lg sticky top-0 z-10">
       <div class="flex space-x-4 w-1/4">
         <Image class="w-10" src={logo} alt="" />
         <input class="w-44 rounded-full px-4 py-1 text-black bg-gray-200" type="text" placeholder="Search" />
@@ -34,11 +34,13 @@ export default function Header() {
             </a>
           </div>
         </div>
-        <a href="#" class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full">
+        <a href="#" class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full relative">
           <i class="fa-brands fa-facebook-messenger "></i>
+          <div className="bg-red-600 h-5 w-5 rounded-full absolute flex justify-center items-center text-xs text-white font-medium -right-1 -top-1">15</div>
         </a>
-        <a href="#" class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full">
+        <a href="#" class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full relative">
           <i class="fa-solid fa-bell "></i>
+          <div className="bg-red-600 h-5 w-5 rounded-full absolute flex justify-center items-center text-xs text-white font-medium -right-1 -top-1">28</div>
         </a>
         <a href="#">
           <Image class="w-12 h-12 rounded-full overflow-hidden object-cover" src={profile} alt="" />
