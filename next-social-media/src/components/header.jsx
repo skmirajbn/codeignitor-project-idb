@@ -47,9 +47,9 @@ export default function Header() {
           <div className="bg-red-600 h-5 w-5 rounded-full absolute flex justify-center items-center text-xs text-white font-medium -right-1 -top-1">15</div>
 
           {/* Modal */}
-          <div ref={messageModal} className="absolute bg-white top-14 -right-32 px-6 w-80 py-6 min-h-[80vh] shadow-lg shadow-gray-700 rounded-md hidden overflow-auto h-[90vh]">
+          <div ref={messageModal} className="absolute bg-white top-14 -right-32 px-2 w-80 py-2 shadow-lg shadow-gray-700 rounded-md hidden">
             <i class="text-white text-5xl fa-solid fa-sort-up absolute -top-4 left-1/2 -translate-x-1/2"></i>
-            <div className="space-y-6">
+            <div className="space-y-6 max-h-[83vh] overflow-auto px-3 py-3">
               {/* Single Message */}
               <div className="space-y-2">
                 <div className="flex gap-3 items-center">
@@ -141,6 +141,7 @@ export default function Header() {
                 <hr />
               </div>
             </div>
+            <h3 className="text-sm text-blue-600 text-center py-2">See All in Messenger</h3>
           </div>
         </a>
         <a href="#" class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full relative">
