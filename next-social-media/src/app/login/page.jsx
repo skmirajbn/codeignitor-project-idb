@@ -14,7 +14,7 @@ export default function SignUp() {
           <button className="bg-[#1877F2] text-white py-3 rounded-md font-medium text-xl">Log in</button>
           <h5 className="text-center text-blue-600 text-sm">Forgotten Password?</h5>
           <hr />
-          <h2 className="bg-[#42B72A] text-white inline-block w-fit px-6 py-3 rounded-md mx-auto">Create New Account</h2>
+          <h2 className="bg-[#42B72A] text-white inline-block w-fit px-6 py-3 rounded-md mx-auto font-medium">Create New Account</h2>
         </form>
         <h3 className="text-sm text-center">
           <b>Create a Page</b> for a celebrity, brand or business.
