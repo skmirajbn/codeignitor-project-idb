@@ -141,7 +141,9 @@ export default function Header() {
                 <hr />
               </div>
             </div>
-            <h3 className="text-sm text-blue-600 text-center py-2">See All in Messenger</h3>
+            <Link href="/messages" className="block text-sm text-blue-600 text-center py-2">
+              See All in Messenger
+            </Link>
           </div>
         </a>
         <a href="#" class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full relative">
