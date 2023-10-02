@@ -28,7 +28,7 @@ export default function Post() {
           </div>
         </div>
         <div className="flex flex-col items-end gap-2">
-          <input className="border-gray-500 border-2 w-full p-4 rounded-lg" type="text" placeholder="Enter Comment Here" />
+          <textarea className="border-gray-500 border-2 w-full p-4 rounded-lg" type="text" placeholder="Enter Comment Here" />
           <div className="flex gap-3 items-center">
             <i class="fa-solid fa-face-smile text-3xl text-blue-500"></i>
             <i class="fa-solid fa-paper-plane text-blue-600 text-3xl"></i>

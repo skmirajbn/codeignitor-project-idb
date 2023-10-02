@@ -1,4 +1,3 @@
-import Header from "@/components/header";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -18,10 +17,7 @@ export default function RootLayout({ children }) {
         <title>Document</title>
         <link rel="stylesheet" href="fontawesome/css/all.min.css" />
       </head>
-      <body>
-        <Header />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
