@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
 import Header from "@/components/header";
 import MessageBody from "./messageBody";
 import MessageSidebar from "./messageSidebar";
