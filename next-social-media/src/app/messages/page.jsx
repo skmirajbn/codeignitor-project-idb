@@ -4,9 +4,9 @@ import MessageSidebar from "./messageSidebar";
 
 export default function Page() {
   return (
-    <div className="h-screen">
+    <div className="flex flex-col h-screen">
       <Header />
-      <section className="flex">
+      <section className="flex h-full">
         <MessageSidebar />
         {/* Message Body */}
         <div className="w-2/4 p-4 space-y-3">

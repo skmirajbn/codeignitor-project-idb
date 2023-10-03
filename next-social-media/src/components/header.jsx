@@ -12,7 +12,7 @@ export default function Header() {
     console.log("message clicked");
   };
   return (
-    <header class=" flex justify-between items-center bg-white text-black py-3 px-5 shadow-lg sticky top-0 z-10">
+    <header class=" flex justify-between items-center bg-white text-black py-3 px-5 shadow-lg sticky top-0 z-10 h-[300px]">
       <div class="flex space-x-4 w-1/4">
         <Link href="/">
           <Image class="w-10" src={logo} alt="" />
