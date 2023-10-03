@@ -1,10 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import Header from "@/components/header";
+import { useEffect, useRef } from "react";
 import MessageReceiver from "./messageReceiver";
 import MessageSender from "./messageSender";
 import MessageSidebar from "./messageSidebar";
 
 export default function Page() {
+  const messageDiv = useRef();
+  useEffect(() => {
+    messageDiv.current.scrollTop = messageDiv.current.scrollHeight;
+  }, []);
   return (
     <div className="h-screen">
       <Header />
@@ -27,10 +33,34 @@ export default function Page() {
             <div className="w-full h-px bg-gray-200 mt-2"></div>
           </div>
           {/* Messages */}
-          <div className="overflow-y-auto flex flex-col gap-3 justify-end py-4 px-3" style={{ height: "calc(100% - 10rem)" }}>
-            <MessageSender message="Hello, Dear How are You?" />
-            <MessageSender message="Kotodin Dekhina tomay" />
-            <MessageReceiver message="Dhon bad dao !" />
+          <div ref={messageDiv} className="overflow-y-auto py-4 px-3" style={{ height: "calc(100% - 10rem)" }}>
+            <div className="flex flex-col gap-3 justify-end min-h-full">
+              <MessageSender message="Hello, Dear How are You?" />
+              <MessageSender message="Kotodin Dekhina tomay" />
+              <MessageReceiver message="Dhon bad dao !" />
+              <MessageReceiver message="Kothay aso Tumi?" />
+              <MessageSender message="Basay asi" />
+              <MessageSender message="Tumi Kothay aso?" />
+              <MessageReceiver message="Basay amio. Ber hoba?" />
+              <MessageSender message="Yes ! 😁 Cholo gurte jai" />
+              <MessageSender message="Hello, Dear How are You?" />
+              <MessageSender message="Kotodin Dekhina tomay" />
+              <MessageReceiver message="Dhon bad dao !" />
+              <MessageReceiver message="Kothay aso Tumi?" />
+              <MessageSender message="Basay asi" />
+              <MessageSender message="Tumi Kothay aso?" />
+              <MessageReceiver message="Basay amio. Ber hoba?" />
+              <MessageSender message="Yes ! 😁 Cholo gurte jai" />
+              <MessageSender message="Hello, Dear How are You?" />
+              <MessageSender message="Kotodin Dekhina tomay" />
+              <MessageReceiver message="Dhon bad dao !" />
+              <MessageReceiver message="Kothay aso Tumi?" />
+              <MessageSender message="Basay asi" />
+              <MessageSender message="Tumi Kothay aso?" />
+              <MessageReceiver message="Basay amio. Ber hoba?" />
+              <MessageSender message="Yes ! 😁 Cholo gurte jai" />
+              <MessageSender message="Yes ! Yes" />
+            </div>
           </div>
           {/* Messging Writing */}
           <div className="h-16 flex items-center gap-4">
