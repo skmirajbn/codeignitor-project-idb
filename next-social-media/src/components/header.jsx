@@ -13,10 +13,12 @@ export default function Header() {
   };
   return (
     <header class=" flex justify-between items-center bg-white text-black py-3 px-5 shadow-lg sticky top-0 z-10">
-      <Link href="/" class="flex space-x-4 w-1/4">
-        <Image class="w-10" src={logo} alt="" />
+      <div class="flex space-x-4 w-1/4">
+        <Link href="/">
+          <Image class="w-10" src={logo} alt="" />
+        </Link>
         <input class="w-44 rounded-full px-4 py-1 text-black bg-gray-200" type="text" placeholder="Search" />
-      </Link>
+      </div>
       <nav class="flex space-x-16 text-bold justify-center w-2/4 text-2xl">
         <a class="text-blue-600" href="#">
           <i class="fa-solid fa-house"></i>
@@ -42,7 +44,7 @@ export default function Header() {
             </a>
           </div>
         </div>
-        <a class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full relative">
+        <div class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full relative">
           <i class="fa-brands fa-facebook-messenger" onClick={showToggle}></i>
           <div className="bg-red-600 h-5 w-5 rounded-full absolute flex justify-center items-center text-xs text-white font-medium -right-1 -top-1">15</div>
 
@@ -145,7 +147,7 @@ export default function Header() {
               See All in Messenger
             </Link>
           </div>
-        </a>
+        </div>
         <a href="#" class="bg-gray-200 w-10 h-10 flex justify-center items-center rounded-full relative">
           <i class="fa-solid fa-bell "></i>
           <div className="bg-red-600 h-5 w-5 rounded-full absolute flex justify-center items-center text-xs text-white font-medium -right-1 -top-1">28</div>
