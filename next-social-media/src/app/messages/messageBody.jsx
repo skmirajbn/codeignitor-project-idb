@@ -1,8 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+import { useEffect, useRef } from "react";
 import MessageReceiver from "./messageReceiver";
 import MessageSender from "./messageSender";
 
-export default function messageBody() {
+export default function MessageBody() {
+  const messageDiv = useRef();
+  useEffect(() => {
+    messageDiv.current.scrollTop = messageDiv.current.scrollHeight;
+  }, []);
   return (
     <div className="w-2/4 px-4" style={{ height: "calc(100vh - 5rem)" }}>
       <div className="h-24 py-4">
