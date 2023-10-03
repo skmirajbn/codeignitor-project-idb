@@ -21,6 +21,7 @@ export default function Page() {
               <i class="fa-solid fa-circle-info text-xl"></i>
             </div>
           </div>
+
           <hr />
         </div>
         {/* Message options */}

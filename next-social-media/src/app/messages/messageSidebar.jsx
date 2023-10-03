@@ -16,7 +16,7 @@ export default function MessageSidebar() {
       </div>
       <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs rounded-full bg-gray-100 h-[2rem]" />
       <h3 className="text-xl font-bold">Inbox</h3>
-      <div className="overflow-auto space-y-3 h-[70vh]">
+      <div className="overflow-auto space-y-3 h-full">
         <SingleMessageSidebar />
         <SingleMessageSidebar />
         <SingleMessageSidebar />
