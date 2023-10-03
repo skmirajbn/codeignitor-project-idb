@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Header from "@/components/header";
+import MessageReceiver from "./messageReceiver";
 import MessageSender from "./messageSender";
 import MessageSidebar from "./messageSidebar";
 
@@ -27,14 +28,9 @@ export default function Page() {
           </div>
           {/* Messages */}
           <div className="overflow-y-auto flex flex-col gap-3 justify-end py-4 px-3" style={{ height: "calc(100% - 10rem)" }}>
-            <MessageSender />
-            <MessageSender />
-
-            {/* Message Receiver*/}
-            <div className="flex items-center gap-4 justify-start">
-              <img className="h-11 w-11 object-cover rounded-full" src="img/profile.jpg" alt="" />
-              <h5 className="bg-blue-600 w-fit px-4 py-2 rounded-full text-white">I am Fine my dear!</h5>
-            </div>
+            <MessageSender message="Hello, Dear How are You?" />
+            <MessageSender message="Kotodin Dekhina tomay" />
+            <MessageReceiver message="Dhon bad dao !" />
           </div>
           {/* Messging Writing */}
           <div className="h-16 flex items-center gap-4">
