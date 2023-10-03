@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
+"use client";
 import { useEffect, useRef } from "react";
 import MessageReceiver from "./messageReceiver";
 import MessageSender from "./messageSender";
