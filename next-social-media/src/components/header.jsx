@@ -152,7 +152,7 @@ export default function Header() {
           <i class="fa-solid fa-bell "></i>
           <div className="bg-red-600 h-5 w-5 rounded-full absolute flex justify-center items-center text-xs text-white font-medium -right-1 -top-1">28</div>
         </a>
-        <a href="#">
+        <a href="/profile">
           <Image class="w-12 h-12 rounded-full overflow-hidden object-cover" src={profile} alt="" />
         </a>
       </div>
