@@ -30,7 +30,7 @@ export default function MessageBody() {
         <div className="flex flex-col gap-3 justify-end min-h-full">
           <MessageSender message="Hello, Dear How are You?" />
           <MessageSender message="Kotodin Dekhina tomay" />
-          <MessageReceiver message="Dhon bad dao !" />
+          <MessageReceiver message="Dhong bad dao !" />
           <MessageReceiver message="Kothay aso Tumi?" />
           <MessageSender message="Basay asi" />
           <MessageSender message="Tumi Kothay aso?" />
@@ -38,7 +38,7 @@ export default function MessageBody() {
           <MessageSender message="Yes ! 😁 Cholo gurte jai" />
           <MessageSender message="Hello, Dear How are You?" />
           <MessageSender message="Kotodin Dekhina tomay" />
-          <MessageReceiver message="Dhon bad dao !" />
+          <MessageReceiver message="Dhong bad dao !" />
           <MessageReceiver message="Kothay aso Tumi?" />
           <MessageSender message="Basay asi" />
           <MessageSender message="Tumi Kothay aso?" />
@@ -46,7 +46,7 @@ export default function MessageBody() {
           <MessageSender message="Yes ! 😁 Cholo gurte jai" />
           <MessageSender message="Hello, Dear How are You?" />
           <MessageSender message="Kotodin Dekhina tomay" />
-          <MessageReceiver message="Dhon bad dao !" />
+          <MessageReceiver message="Dhong bad dao !" />
           <MessageReceiver message="Kothay aso Tumi?" />
           <MessageSender message="Basay asi" />
           <MessageSender message="Tumi Kothay aso?" />
